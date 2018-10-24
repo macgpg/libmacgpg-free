@@ -3,6 +3,7 @@ Libmacgpg-free
 
 Libmacgpg-free is a drop-in-replacement for [GPG Suite](https://gpgtools.org) Libmacgpg removing the paywall.
 
+Tested with GPG-Suite 2018.4 and 2018.5
 
 Build
 -----
@@ -28,3 +29,11 @@ make
 sudo cp ./build/Release/org.gpgtools.Libmacgpg.xpc/Contents/MacOS/org.gpgtools.Libmacgpg /Library/Application\ Support/GPGTools/org.gpgtools.Libmacgpg.xpc/Contents/MacOS
 sudo chmod 755 /Library/Application\ Support/GPGTools/org.gpgtools.Libmacgpg.xpc/Contents/MacOS/org.gpgtools.Libmacgpg
 ```
+
+Restart your computer or at least restart the XPC `org.gpgtools.Libmacgpg.xpc`:
+```bash
+sudo launchctl stop org.gpgtools.Libmacgpg.xpc
+sudo launchctl start org.gpgtools.Libmacgpg.xpc
+```
+
+...or eventully kill the org.gpgtools.Libmacgpg.xpc process.
