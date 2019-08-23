@@ -3,7 +3,7 @@ Libmacgpg-free
 
 Libmacgpg-free is a drop-in-replacement for [GPG Suite](https://gpgtools.org) Libmacgpg removing the paywall.
 
-Tested with GPG-Suite 2018.4 and 2018.5
+Tested with GPG-Suite **2019.1**, 2018.5 and 2018.4
 
 Build
 -----
@@ -14,10 +14,11 @@ git clone --recursive https://github.com/macgpg/libmacgpg-free
 cd Libmacgpg-free
 ```
 
-#### Build
+#### Build (newest version 2019.1)
 ```bash
 make
 ```
+*Checkout an older tag if you wish to build for older versions*
 
 #### Install
 * Install the [GPG Suite](https://gpgtools.org).
